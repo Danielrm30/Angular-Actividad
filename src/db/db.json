@@ -1,0 +1,12 @@
+{
+  "cars": [
+    {
+      "brand": "Ford",
+      "model": "Ford Focus-ST",
+      "year": "2010",
+      "transmission": "Estándar",
+      "color": "Naranja",
+      "id": 1
+    }
+  ]
+}

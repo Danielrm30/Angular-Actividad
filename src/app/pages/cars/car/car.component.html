@@ -1,0 +1,24 @@
+<div class="container" *ngIf="formCar" [formGroup] = "formCar">
+  <h1>{{title}}</h1>
+  <mat-form-field class="input-form" appearance="fill">
+    <mat-label>Marca</mat-label>
+    <input matInput placeholder="Ingresa la marca" formControlName="brand">
+  </mat-form-field>
+  <mat-form-field class="input-form" appearance="fill">
+    <mat-label>Modelo</mat-label>
+    <input matInput placeholder="Ingresa el modelo"  formControlName="model">
+  </mat-form-field>
+  <mat-form-field class="input-form" appearance="fill">
+    <mat-label>Año</mat-label>
+    <input matInput placeholder="Ingresa el año"  formControlName="year">
+  </mat-form-field>
+  <mat-form-field class="input-form" appearance="fill">
+    <mat-label>Transmisión</mat-label>
+    <input matInput placeholder="¿Automático o Estándar?"  formControlName="transmission">
+  </mat-form-field>
+  <mat-form-field class="input-form" appearance="fill">
+    <mat-label>Color</mat-label>
+    <input matInput placeholder="Ingresa el color"  formControlName="color">
+  </mat-form-field>
+  <button mat-raised-button color="primary" [disabled]="formCar.invalid" (click)="save()">Enviar</button>
+</div>
